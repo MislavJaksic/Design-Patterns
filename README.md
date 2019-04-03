@@ -14,3 +14,7 @@ Strategy pattern allows you to switch the algorithm or strategy based upon the s
 #### Observer pattern
 
 Defines a dependency between objects so that whenever an object changes its state, all its dependents are notified.  
+
+#### Decorator pattern
+
+Dynamically add a functionality instead of using inheritance. A Decorator is a and has a decorated class.  
