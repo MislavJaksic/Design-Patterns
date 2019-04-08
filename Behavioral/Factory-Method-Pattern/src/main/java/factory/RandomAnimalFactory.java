@@ -1,19 +1,15 @@
 package factory;
 
-import java.util.Random;
-
 import zoo.Animal;
 import zoo.Deer;
 import zoo.Rabbit;
+import zoo.Wolf;
 
 public class RandomAnimalFactory implements AnimalFactory {
 
 	@Override
-	public Animal CreateAnimal() {
-		Random randomizer = new Random(); 
-		int value = randomizer.nextInt(3);
-		
-		Animal animal;
+	public Animal CreateAnimal(int value) {
+		Animal animal = null;
 		if (value > -1 && value < 1) {
 			animal = new Rabbit();
 		} else if (value > 0 && value < 2) {

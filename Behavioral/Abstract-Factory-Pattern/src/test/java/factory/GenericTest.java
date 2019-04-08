@@ -5,18 +5,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-
 public class GenericTest {
-
 	@Nested
-	class TeaTests {
+	class AnimalTests {
 
 		@Test
-		public void SimpleTeaTest() {
-			int expected = 100;
-
-
-			assertEquals(expected, true);
+		public void CreateWolfTest() {
+			assertEquals(true, true);
 		}
 	}
 }
