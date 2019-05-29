@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800" src="images/fractal_pattern.png" alt="Fractal pattern"></a>
+  <img width="600" src="images/fractal_pattern.png" alt="Fractal pattern"></a>
 </p>
 
 ## Design patterns
