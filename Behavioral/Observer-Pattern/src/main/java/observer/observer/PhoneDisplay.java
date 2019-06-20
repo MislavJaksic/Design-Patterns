@@ -1,6 +1,6 @@
 package observer.observer;
 
-import observer.observable_subject.WeatherDataCollector;
+import observer.subject.WeatherDataCollector;
 
 public class PhoneDisplay implements Observer {
 	public int humidity = -1;
@@ -17,8 +17,8 @@ public class PhoneDisplay implements Observer {
 
 	
 	@Override
-	public void Update() {
-		this.humidity = this.weather_collector.GetHumidity();
-		this.pressure = this.weather_collector.GetPressure();
+	public void update() {
+		this.humidity = this.weather_collector.getHumidity();
+		this.pressure = this.weather_collector.getPressure();
 	}
 }

@@ -6,9 +6,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import observer.observable_subject.WeatherStation;
 import observer.observer.MonitorDisplay;
 import observer.observer.PhoneDisplay;
+import observer.subject.WeatherStation;
 
 public class WeatherTest {
 	@Nested
@@ -17,24 +17,24 @@ public class WeatherTest {
 		MonitorDisplay display = new MonitorDisplay(station);
 		
 		@BeforeEach
-		public void RegisterDisplay() {
-			station.AddObserver(display);
+		public void registerDisplay() {
+			station.addObserver(display);
 		}
 		
 		@Test
-		public void TestHumidity() {
+		public void testHumidity() {
 			int expected = 100;
 			
-			station.SetHumidity(expected);
+			station.setHumidity(expected);
 			
 			assertEquals(expected, display.humidity);
 		}
 		
 		@Test
-		public void TestPressure() {
+		public void testPressure() {
 			int expected = 100;
 			
-			station.SetPressure(expected);
+			station.setPressure(expected);
 			
 			assertEquals(expected, display.pressure);
 		}
@@ -46,24 +46,24 @@ public class WeatherTest {
 		PhoneDisplay display = new PhoneDisplay(station);
 		
 		@BeforeEach
-		public void RegisterDisplay() {
-			station.AddObserver(display);
+		public void registerDisplay() {
+			station.addObserver(display);
 		}
 		
 		@Test
-		public void TestHumidity() {
+		public void testHumidity() {
 			int expected = 100;
 			
-			station.SetHumidity(expected);
+			station.setHumidity(expected);
 			
 			assertEquals(expected, display.humidity);
 		}
 		
 		@Test
-		public void TestPressure() {
+		public void testPressure() {
 			int expected = 100;
 			
-			station.SetPressure(expected);
+			station.setPressure(expected);
 			
 			assertEquals(expected, display.pressure);
 		}

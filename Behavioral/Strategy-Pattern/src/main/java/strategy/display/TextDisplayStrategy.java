@@ -2,7 +2,7 @@ package strategy.display;
 
 public class TextDisplayStrategy implements DisplayStrategy {
 	@Override
-	public String Display() {
+	public String display() {
 		return "test display";
 	}
 }

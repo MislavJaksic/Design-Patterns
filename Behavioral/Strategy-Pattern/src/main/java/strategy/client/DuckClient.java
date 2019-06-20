@@ -4,6 +4,9 @@ import strategy.display.DisplayStrategy;
 import strategy.fly.FlyStrategy;
 import strategy.quack.QuackStrategy;
 
+/**
+ * An empty shell that is filled with different types of algorithms.
+ */
 public class DuckClient  {
 	private FlyStrategy flying;
 	private QuackStrategy quacking;
@@ -19,15 +22,15 @@ public class DuckClient  {
 	
 	
 	
-	public String Fly() {
-		return this.flying.Fly();
+	public String fly() {
+		return this.flying.fly();
 	}
 	
-	public String Quack() {
-		return this.quacking.Quack();
+	public String quack() {
+		return this.quacking.quack();
 	}
 	
-	public String Display() {
-		return this.displaying.Display();
+	public String display() {
+		return this.displaying.display();
 	}
 }

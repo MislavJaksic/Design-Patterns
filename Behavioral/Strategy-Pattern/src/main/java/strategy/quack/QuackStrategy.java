@@ -1,5 +1,5 @@
 package strategy.quack;
 
 public interface QuackStrategy {
-	public String Quack();
+	public String quack();
 }

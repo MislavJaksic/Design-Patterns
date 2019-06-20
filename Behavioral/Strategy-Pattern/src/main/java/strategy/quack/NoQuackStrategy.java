@@ -2,7 +2,7 @@ package strategy.quack;
 
 public class NoQuackStrategy implements QuackStrategy {
 	@Override
-	public String Quack() {
+	public String quack() {
 		return "no quack";
 	}
 

@@ -13,27 +13,26 @@ import strategy.quack.LoudQuackStrategy;
 import strategy.quack.NoQuackStrategy;
 
 public class DuckTest {
-
 	@Nested
 	class RubberDuckTests {
 		DuckClient rubber_duck = new DuckClient(new NoFlyStrategy(), new NoQuackStrategy(), new GraphicDisplayStrategy());
 		
 		@Test
-		public void TestFly() {
+		public void testFly() {
 			String expected = "no fly";
-			assertEquals(expected, rubber_duck.Fly());
+			assertEquals(expected, rubber_duck.fly());
 		}
 		
 		@Test
-		public void TestQuack() {
+		public void testQuack() {
 			String expected = "no quack";
-			assertEquals(expected, rubber_duck.Quack());
+			assertEquals(expected, rubber_duck.quack());
 		}
 		
 		@Test
-		public void TestDisplay() {
+		public void testDisplay() {
 			String expected = "graphic display";
-			assertEquals(expected, rubber_duck.Display());
+			assertEquals(expected, rubber_duck.display());
 		}
 	}
 	
@@ -42,21 +41,21 @@ public class DuckTest {
 		DuckClient sky_duck = new DuckClient(new HighFlyStrategy(), new LoudQuackStrategy(), new GraphicDisplayStrategy());
 		
 		@Test
-		public void TestFly() {
+		public void testFly() {
 			String expected = "high fly";
-			assertEquals(expected, sky_duck.Fly());
+			assertEquals(expected, sky_duck.fly());
 		}
 		
 		@Test
-		public void TestQuack() {
+		public void testQuack() {
 			String expected = "loud quack";
-			assertEquals(expected, sky_duck.Quack());
+			assertEquals(expected, sky_duck.quack());
 		}
 		
 		@Test
-		public void TestDisplay() {
+		public void testDisplay() {
 			String expected = "graphic display";
-			assertEquals(expected, sky_duck.Display());
+			assertEquals(expected, sky_duck.display());
 		}
 	}
 }
