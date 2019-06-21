@@ -5,7 +5,7 @@ import command.receiver.Light;
 /**
  * Responsible for turning the light on and off.
  */
-public class OnCommand implements ILightCommand {
+public class OnCommand implements LightCommand {
 	private Light light;
 	
 	

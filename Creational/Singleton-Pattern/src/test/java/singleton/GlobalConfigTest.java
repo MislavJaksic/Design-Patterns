@@ -11,13 +11,13 @@ public class GlobalConfigTest {
 		GlobalConfig config = GlobalConfig.getInstance();
 		
 		@Test
-		public void TestNumber() {
-			assertEquals(42, config.getSecret_number());
+		public void numerTest() {
+			assertEquals(42, config.getSecretNumber());
 		}
 		
 		@Test
-		public void TestWord() {
-			assertEquals("sh", config.getSecret_word());
+		public void wordTest() {
+			assertEquals("sh", config.getSecretWord());
 		}
 	}
 }

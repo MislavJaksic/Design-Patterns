@@ -7,7 +7,7 @@ public class Rabbit implements Animal {
 	}
 
 	@Override
-	public String Speak() {
+	public String speak() {
 		return "rabbit";
 	}
 

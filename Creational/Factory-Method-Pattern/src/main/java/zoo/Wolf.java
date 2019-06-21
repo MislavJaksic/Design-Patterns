@@ -7,7 +7,7 @@ public class Wolf implements Animal {
 	}
 	
 	@Override
-	public String Speak() {
+	public String speak() {
 		return "wolf";
 	}
 

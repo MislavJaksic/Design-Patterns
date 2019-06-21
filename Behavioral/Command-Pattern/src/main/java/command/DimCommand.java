@@ -5,7 +5,7 @@ import command.receiver.Light;
 /**
  * Responsible for dimming and brightening the light.
  */
-public class DimCommand implements ILightCommand {
+public class DimCommand implements LightCommand {
 	private Light light;
 	
 	

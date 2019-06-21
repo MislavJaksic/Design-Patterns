@@ -1,17 +1,17 @@
 package command.invoker;
 
-import command.ILightCommand;
+import command.LightCommand;
 
 /**
  * Responsible for executing chosen commands.
  */
 public class Remote {
-	private ILightCommand turn_on;
-	private ILightCommand dim_down;
+	private LightCommand turn_on;
+	private LightCommand dim_down;
 	
 	
 	
-	public Remote(ILightCommand turn_on, ILightCommand dim_down) {
+	public Remote(LightCommand turn_on, LightCommand dim_down) {
 		this.turn_on = turn_on;
 		this.dim_down = dim_down;
 	}

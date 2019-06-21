@@ -5,9 +5,8 @@ import zoo.Deer;
 import zoo.Rabbit;
 
 public class RandomHerbivourFactory implements AnimalFactory {
-	
 	@Override
-	public Animal CreateAnimal(int value) {
+	public Animal getAnimal(double value) {
 		Animal animal = null;
 		if (value > -1 && value < 1) {
 			animal = new Rabbit();

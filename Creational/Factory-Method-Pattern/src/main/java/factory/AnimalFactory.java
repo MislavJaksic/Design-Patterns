@@ -2,6 +2,12 @@ package factory;
 
 import zoo.Animal;
 
+/**
+ * Factory method Creator.
+ */
 public interface AnimalFactory {
-	public Animal CreateAnimal(int value);
+	/**
+	 * THE Factory method.
+	 */
+	public Animal getAnimal(double value);
 }

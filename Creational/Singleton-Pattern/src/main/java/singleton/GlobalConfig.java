@@ -1,7 +1,7 @@
 package singleton;
 
 /**
- * Responsible for creating a single global instance access point.
+ * A single global instance access point.
  */
 public class GlobalConfig {
 	static private GlobalConfig config;
@@ -28,11 +28,11 @@ public class GlobalConfig {
 
 
 
-	public int getSecret_number() {
+	public int getSecretNumber() {
 		return secret_number;
 	}
 	
-	public String getSecret_word() {
+	public String getSecretWord() {
 		return secret_word;
 	}
 }

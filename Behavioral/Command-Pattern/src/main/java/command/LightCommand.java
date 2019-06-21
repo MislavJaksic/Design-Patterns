@@ -1,7 +1,6 @@
 package command;
 
-public interface ILightCommand {
+public interface LightCommand {
 	public void execute();
-	
 	public void unexecute();
 }
