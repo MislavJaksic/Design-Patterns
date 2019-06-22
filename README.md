@@ -25,9 +25,21 @@ Ensures a class has only one instance, and provides a global point of access to 
 
 ### Structural patterns
 
+#### Adapter
+
+Converts the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.  
+
 #### Decorator
 
 Attaches additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.  
+
+#### Facade
+
+Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.  
+
+#### Proxy
+
+Provides a surrogate or placeholder for another object to control access to it.  
 
 ### Behavioral patterns
 

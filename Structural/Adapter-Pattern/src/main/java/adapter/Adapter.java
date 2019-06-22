@@ -1,6 +1,6 @@
 package adapter;
 
-public class Adapter implements ITarget {
+public class Adapter implements Target {
 	Adaptee adaptee;
 	
 	
@@ -12,7 +12,7 @@ public class Adapter implements ITarget {
 
 
 	@Override
-	public void request() {
+	public String request() {
 		this.adaptee.specificRequest();
 	}
 
