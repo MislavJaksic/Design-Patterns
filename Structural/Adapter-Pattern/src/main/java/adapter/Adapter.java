@@ -1,19 +1,19 @@
 package adapter;
 
-public class Adapter implements Target {
-	Adaptee adaptee;
+public class Adapter implements PhaseAdapter {
+	ThreePhaseSocket threePhaseSocket;
 	
 	
 	
-	public Adapter(Adaptee adaptee) {
-		this.adaptee = adaptee;
+	public Adapter(ThreePhaseSocket threePhaseSocket) {
+		this.threePhaseSocket = threePhaseSocket;
 	}
 
 
 
 	@Override
-	public String request() {
-		this.adaptee.specificRequest();
+	public String connect() {
+		return this.threePhaseSocket.getPower();
 	}
 
 }

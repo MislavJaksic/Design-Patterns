@@ -1,5 +1,5 @@
 /**
  * Makes incompatible interfaces compatible.
- * Interface wrapper.
+ * Wrapper.
  */
 package adapter;

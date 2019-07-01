@@ -7,7 +7,7 @@
 Sources:  
 * [List of patterns and their UML diagrams](https://java-design-patterns.com/)
 * [List of patterns and their simple explainations](https://github.com/kamranahmedse/design-patterns-for-humans)
-* [By the book implementations of Head First Design Patterns patterns](https://github.com/bethrobson/Head-First-Design-Patterns)
+* [Patterns explained in video form](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
 
 ### Creational patterns
 
@@ -28,6 +28,10 @@ Ensures a class has only one instance, and provides a global point of access to 
 #### Adapter
 
 Converts the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.  
+
+#### Bridge
+
+Decouples an abstraction from its implementation so that the two can vary independently.  
 
 #### Decorator
 
