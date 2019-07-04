@@ -33,6 +33,10 @@ Converts the interface of a class into another interface clients expect. An adap
 
 Decouples an abstraction from its implementation so that the two can vary independently.  
 
+#### Composite
+
+Composes objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+
 #### Decorator
 
 Attaches additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.  
@@ -47,14 +51,26 @@ Provides a surrogate or placeholder for another object to control access to it.
 
 ### Behavioral patterns
 
+#### Command
+
+Encapsulates a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.
+
+#### Iterator
+
+Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.  
+
 #### Observer
 
 Defines a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically.  
 
-#### Command
+#### State
 
-Encapsulates a request as an object, thereby allowing for the parameterization of clients with different requests, and the queuing or logging of requests. It also allows for the support of undoable operations.  
+Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.  
 
 #### Strategy
 
 Defines a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.  
+
+#### Template method
+
+Defines the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.  
