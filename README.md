@@ -9,6 +9,8 @@ Sources:
 * [List of patterns and their simple explainations](https://github.com/kamranahmedse/design-patterns-for-humans)
 * [Patterns explained in video form](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
 
+
+
 ### Creational patterns
 
 #### Abstract factory
@@ -22,6 +24,8 @@ Defines an interface for creating a single object, but let subclasses decide whi
 #### Singleton
 
 Ensures a class has only one instance, and provides a global point of access to it.  
+
+
 
 ### Structural patterns
 
@@ -49,6 +53,8 @@ Provides a unified interface to a set of interfaces in a subsystem. Facade defin
 
 Provides a surrogate or placeholder for another object to control access to it.  
 
+
+
 ### Behavioral patterns
 
 #### Command
@@ -58,6 +64,10 @@ Encapsulates a request as an object, thereby allowing for the parameterization o
 #### Iterator
 
 Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.  
+
+#### Null object
+
+Avoids null references by providing a default object.  
 
 #### Observer
 
